@@ -1,0 +1,91 @@
+table {
+    border-collapse: collapse;
+}
+
+
+table, th,td {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+th {
+    background-color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+th::first-letter {
+    color: yellow;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #EAEAEA;
+}
+
+td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+tr:hover td:first-child {
+    color: red;
+}
+
+tr:hover td:hover {
+    color: black;
+}
+
+tr td:nth-child(4),
+tr td:nth-child(5),
+tr td:nth-child(6)
+{
+text-align: center;
+}
+
+tr:hover td:nth-child(4),
+tr:hover td:nth-child(5),
+tr:hover td:nth-child(6) {
+    background-color: green;
+}
+
+tr:hover td:nth-child(4):hover,
+tr:hover td:nth-child(5):hover,
+tr:hover td:nth-child(6):hover
+{
+    background-color: blue;
+}
+
+th:nth-child(7),
+td:nth-child(7){
+    display: none;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+a[href^="http:"] {
+    color: red;
+}
+
+a {
+    color: blue;
+}
+
+a[href$=".pdf"]::after {
+    content: "(PDF)";
+}
+
+tr th {
+    position: sticky;
+    top: 0;
+}
+
+/*tr :first-child{*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*}*/
